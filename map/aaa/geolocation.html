@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+document.getElementById("demo").innerHTML = getLocation();
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  
+  var lt = position.coords.latitude
+  var ln = position.coords.longitude;
+  
+ document.getElementById("lat").value =lt;
+  
+  document.getElementById("lng").value =ln;
+}
+</script>
+
+
+
+
+
+ <form action = "" method = "post">	
+            
+            <input type = "text"  name = "address3" placeholder = "username = tutorialspoint"   required></br>			   
+            <input type = "text"  name = "type3" placeholder = "password = 1234" required>   </br>	 
+
+            <input type = "text"  name = "lat3"  id="lat" ></br>			   
+            <input type = "text"  name = "lng3"  id="lng" >    </br>	 
+			
+		   <button  type = "submit"   name = "autoup">Login</button>
+		   
+ </form>
+
+</body>
+</html>
