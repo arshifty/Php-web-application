@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<script type="text/javascript">
+var img1=new Image();
+img1.src="slide 1.jpg"
+
+var img2=new Image();
+img2.src="slide 2.jpg"
+
+var img3=new Image();
+img3.src="slide 3.jpg"
+
+var img4=new Image();
+img4.src="slide 4.jpg"
+
+var img5=new Image();
+img5.src="slide 5.jpg"
+
+</script>
+
+<style>
+body{
+
+background-color:blue;
+margin:0 auto;
+text-align:center;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<img src="slide 1.jpg" name="slideshow" alt="imageslideshow">
+
+<script type="text/javascript">
+var numberImage=1;
+function myslide()
+{
+
+document.images.slideshow.src=eval("image"+numberImage+".src");
+if(numberImage<5)
+numberImage=numberImage+1
+
+else
+numberImage=1
+
+setTimeout("myslide()",4500)
+}
+
+myslide()
+</script>
+
+</body>
+</html>
