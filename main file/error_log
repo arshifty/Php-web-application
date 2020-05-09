@@ -1,0 +1,1 @@
+[27-Apr-2020 12:12:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/hospitalseba/public_html/db.php on line 9

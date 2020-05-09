@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Public Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+  
+    </style>
+	
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+  
+  <div class="container">
+  
+  <p class="text-danger" align="justify"> <b>  Public Information :  </b>  <br>
+  
+ যে ধরনের তথ্য দিবেন ?<br>
+ যদি কেউ কোন আক্রান্ত বাক্তির তথ্য পেয়ে থাকেন ।<br>
+কেউ বিদেশ থেকে এসেছে ।<br>
+সন্দেহজনক জায়গা যেখানে থাকতে পাড়ে আক্রান্ত বাক্তি ।<br>
+কোথাও  মানুষ বেশি ভিড় করছে এবং সরকারের নির্দেশ মানছে না ।  <br>
+  
+  
+  </p>
+<form action="publicxml.php" method="get">
+<table class="table table-borderless table-hover table-secondary">
+<tr>  
+
+<td> Address  </td>
+<td>:</td>
+<td>  <input id="add" type="text" name="address" placeholder="Enter  address" size="50"> </td>
+
+</tr>
+
+<tr>  
+<td> District  </td>
+<td>:</td>
+<td>  <input type="text" name="district" placeholder="Enter District" size="50"> </td>
+</tr>
+
+<tr>
+
+<td>  Choose Category   </td>
+<td>:</td>
+<td>  
+<select name="category">
+<option value="Affected Area">Affected Area</option>
+<option value="Quarantine Area">Quarantine Area</option>
+<option value="Green Zone">Green Zone</option>
+<option value="Suspect Zone">Suspect Zone</option>
+<option value="Dense Area">Dense Area</option>
+<option value="Lockdown Area">Lockdown Area</option>
+</select>
+
+</td>
+
+
+</tr>
+
+<tr>  
+<td> Reference with information  </td>
+<td>:</td>
+<td>  <input type="text" name="reference" placeholder="Enter Reference of newspaper/online portal" size="50"> </td>
+</tr>
+
+<tr>
+
+<tr>
+<td> </td>
+<td> <input type="reset" value="Reset"  class="btn btn-primary">  </td>
+
+<td> <input type="submit"  class="btn btn-primary">  </td>
+
+
+</tr>
+
+
+</table>
+
+
+
+</form>
+
+
+</div>
+
+  </body>
+</html>
